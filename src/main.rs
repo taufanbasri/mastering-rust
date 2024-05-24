@@ -6,3 +6,10 @@ fn main() {
 fn hello_test(){
     println!("Hello Test")
 }
+
+#[test]
+fn test_variable(){
+    let name = "Taufan Prasetyo";
+
+    println!("Hello {}", name)
+}
