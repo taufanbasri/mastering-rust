@@ -16,3 +16,9 @@ fn test_variable(){
 
     println!("Hello {}", name)
 }
+
+#[test]
+fn static_typing(){
+    let name: &str = "Taufan Prasetyo";
+    println!("Hello {}", name);
+}
