@@ -9,7 +9,10 @@ fn hello_test(){
 
 #[test]
 fn test_variable(){
-    let name = "Taufan Prasetyo";
+    let mut name = "Taufan Prasetyo";
+    println!("Hello {}", name);
+
+    name = "Evita Karlina";
 
     println!("Hello {}", name)
 }
