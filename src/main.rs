@@ -58,3 +58,20 @@ fn number_conversion() {
     let c: i32 = b as i32;
     println!("{}", c);
 }
+
+#[test]
+fn numberic_operator(){
+    let a = 10;
+    let b = 10;
+    let c = a*b;
+    let d = a/b;
+    let e = a+b;
+    let f = a-b;
+    let g = a%b;
+
+    println!("Hasil perkalian {a} * {b} adalah: {c}");
+    println!("Hasil pembagian {a} / {b} adalah: {d}");
+    println!("Hasil penjumlahan {a} + {b} adalah: {e}");
+    println!("Hasil pengurangan {a} - {b} adalah: {f}");
+    println!("Hasil modulus {a} % {b} adalah: {g}");
+}
