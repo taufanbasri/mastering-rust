@@ -75,3 +75,15 @@ fn numberic_operator(){
     println!("Hasil pengurangan {a} - {b} adalah: {f}");
     println!("Hasil modulus {a} % {b} adalah: {g}");
 }
+
+#[test]
+fn augmented_assigment(){
+    let mut a = 10;
+    println!("{a}");
+
+    a += 10;
+    println!("{a}");
+
+    a -= 10;
+    println!("{a}");
+}
