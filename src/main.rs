@@ -22,3 +22,13 @@ fn static_typing(){
     let name: &str = "Taufan Prasetyo";
     println!("Hello {}", name);
 }
+#[test]
+fn shadowing(){
+    let name = "Taufan Prasetyo";
+    println!("Hello {}", name);
+
+    let name = "Evita Karlina";
+    println!("Hello {}", name);
+}
+
+//
