@@ -31,4 +31,9 @@ fn shadowing(){
     println!("Hello {}", name);
 }
 
-//
+#[test]
+fn expicit(){
+    let age: i32 = 32;
+
+    println!("{}", age)
+}
