@@ -37,3 +37,12 @@ fn expicit(){
 
     println!("{}", age)
 }
+
+#[test]
+fn number(){
+    let a: i32 = 10;
+    println!("{}", a);
+
+    let b: f64 = 10.5;
+    println!("{}", b);
+}
