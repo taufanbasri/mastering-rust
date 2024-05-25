@@ -3,12 +3,12 @@ fn main() {
 }
 
 #[test]
-fn hello_test(){
+fn hello_test() {
     println!("Hello Test")
 }
 
 #[test]
-fn test_variable(){
+fn test_variable() {
     let mut name = "Taufan Prasetyo";
     println!("Hello {}", name);
 
@@ -18,12 +18,12 @@ fn test_variable(){
 }
 
 #[test]
-fn static_typing(){
+fn static_typing() {
     let name: &str = "Taufan Prasetyo";
     println!("Hello {}", name);
 }
 #[test]
-fn shadowing(){
+fn shadowing() {
     let name = "Taufan Prasetyo";
     println!("Hello {}", name);
 
@@ -32,17 +32,29 @@ fn shadowing(){
 }
 
 #[test]
-fn expicit(){
+fn expicit() {
     let age: i32 = 32;
 
     println!("{}", age)
 }
 
 #[test]
-fn number(){
+fn number() {
     let a: i32 = 10;
     println!("{}", a);
 
     let b: f64 = 10.5;
     println!("{}", b);
+}
+
+#[test]
+fn number_conversion() {
+    let a: i8 = 10;
+    println!("{}", a);
+
+    let b: i16 = a as i16;
+    println!("{}", b);
+
+    let c: i32 = b as i32;
+    println!("{}", c);
 }
