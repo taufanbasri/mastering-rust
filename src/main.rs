@@ -60,14 +60,14 @@ fn number_conversion() {
 }
 
 #[test]
-fn numberic_operator(){
+fn numberic_operator() {
     let a = 10;
     let b = 10;
-    let c = a*b;
-    let d = a/b;
-    let e = a+b;
-    let f = a-b;
-    let g = a%b;
+    let c = a * b;
+    let d = a / b;
+    let e = a + b;
+    let f = a - b;
+    let g = a % b;
 
     println!("Hasil perkalian {a} * {b} adalah: {c}");
     println!("Hasil pembagian {a} / {b} adalah: {d}");
@@ -77,7 +77,7 @@ fn numberic_operator(){
 }
 
 #[test]
-fn augmented_assigment(){
+fn augmented_assigment() {
     let mut a = 10;
     println!("{a}");
 
@@ -89,7 +89,7 @@ fn augmented_assigment(){
 }
 
 #[test]
-fn boolean(){
+fn boolean() {
     let a = true;
     let b: bool = false;
 
@@ -97,10 +97,10 @@ fn boolean(){
 }
 
 #[test]
-fn comparison(){
+fn comparison() {
     let a = 10;
     let b = 20;
-    let  result: bool = a > b;
+    let result: bool = a > b;
 
     println!("{result}");
 }
@@ -116,4 +116,12 @@ fn boolean_operator() {
     let lulus_final = lulus && lulus_nilai_akhir;
 
     println!("{lulus_final}")
+}
+
+#[test]
+fn char_type() {
+    let char1: char = 'a';
+    let char2: char = 'b';
+
+    println!("{char1} {char2}")
 }
