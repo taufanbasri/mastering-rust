@@ -150,3 +150,17 @@ fn tuple() {
 
     println!("{:?}", data);
 }
+
+#[test]
+fn unit() {
+    println!("Hello")
+}
+
+#[test]
+fn test_unit() {
+    let result = unit();
+    println!("{:?}", result);
+
+    let test = ();
+    println!("{:?}", test);
+}
