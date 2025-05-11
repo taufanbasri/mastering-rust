@@ -164,3 +164,14 @@ fn test_unit() {
     let test = ();
     println!("{:?}", test);
 }
+
+#[test]
+fn array() {
+    let array: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("{:?}", array);
+
+    // access to array
+    let a = array[0];
+    let b = array[1];
+    println!("{a} {b}")
+}
