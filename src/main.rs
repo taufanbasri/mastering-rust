@@ -179,4 +179,18 @@ fn array() {
     array[0] = 10;
     array[1] = 20;
     println!("{:?}", array);
+
+    let length: usize = array.len();
+    println!("{length}");
+}
+
+#[test]
+fn two_dimensional_array() {
+    let matrix: [[i32; 3]; 3] = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+    ];
+    println!("{:?}", matrix);
+    println!("{}", matrix[0][0]);
 }
